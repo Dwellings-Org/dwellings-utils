@@ -19,7 +19,7 @@ class DwellingsIcons {
   DwellingsIcons._();
 
   static const _kFontFam = 'dwellings_icons';
-  static const String? _kFontPkg = null;
+  static const String? _kFontPkg = "dwellings_utils";
 
   static const IconData apartment =
       IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
