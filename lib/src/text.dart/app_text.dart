@@ -14,6 +14,7 @@ class AppText extends StatelessWidget {
   final FontStyle? fontStyle;
   final FontWeight? fontWeight;
   final double? height;
+  final TextDecoration? decoration;
 
   ///
   /// fontSize `24`
@@ -31,6 +32,7 @@ class AppText extends StatelessWidget {
     this.fontSize,
     this.fontStyle,
     this.fontWeight,
+    this.decoration,
   }) : style = AppTextStyle.h4;
 
   ///
@@ -49,6 +51,7 @@ class AppText extends StatelessWidget {
     this.fontSize,
     this.fontStyle,
     this.fontWeight,
+    this.decoration,
   }) : style = AppTextStyle.h5;
 
   ///
@@ -67,6 +70,7 @@ class AppText extends StatelessWidget {
     this.fontSize,
     this.fontStyle,
     this.fontWeight,
+    this.decoration,
   }) : style = AppTextStyle.h6;
 
   ///
@@ -85,6 +89,7 @@ class AppText extends StatelessWidget {
     this.fontSize,
     this.fontStyle,
     this.fontWeight,
+    this.decoration,
   }) : style = AppTextStyle.body;
 
   ///
@@ -103,6 +108,7 @@ class AppText extends StatelessWidget {
     this.fontSize,
     this.fontStyle,
     this.fontWeight,
+    this.decoration,
   }) : style = AppTextStyle.body2;
 
   ///
@@ -121,6 +127,7 @@ class AppText extends StatelessWidget {
     this.fontSize,
     this.fontStyle,
     this.fontWeight,
+    this.decoration,
   }) : style = AppTextStyle.button;
 
   ///
@@ -139,6 +146,7 @@ class AppText extends StatelessWidget {
     this.fontSize,
     this.fontStyle,
     this.fontWeight,
+    this.decoration,
   }) : style = const TextStyle();
 
   ///
@@ -157,6 +165,7 @@ class AppText extends StatelessWidget {
     this.fontSize,
     this.fontStyle,
     this.fontWeight,
+    this.decoration,
   }) : style = AppTextStyle.caption;
 
   @override
@@ -168,6 +177,7 @@ class AppText extends StatelessWidget {
       textAlign: centered ? TextAlign.center : textAlign ?? TextAlign.left,
       style: style.copyWith(
         color: color,
+        decoration: decoration,
         height: height,
         fontStyle: fontStyle,
         fontWeight: fontWeight,
