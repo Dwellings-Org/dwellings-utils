@@ -39,6 +39,18 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
+    - family: Euclid_Circular_A
+      fonts:
+        - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid Circular A Light.ttf
+          weight: 100
+        - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid Circular A Medium.ttff
+          weight: 300
+        - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid Circular A Regular.ttf
+          weight: 400
+        - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid Circular A SemiBold.ttf
+          weight: 500
+        - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid_Circular_A_Bold.ttf
+          weight: 600
     - family: dwellings_icons
       fonts:
         - asset: packages/dwellings_utils/assets/fonts/AppIcons.ttf

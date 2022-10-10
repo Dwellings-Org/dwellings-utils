@@ -1,0 +1,177 @@
+import 'package:dwellings_utils/src/text.dart/textstyle.dart';
+import 'package:flutter/material.dart';
+
+class AppText extends StatelessWidget {
+  final String text;
+  final TextStyle style;
+  final bool multiText;
+  final TextAlign? textAlign;
+  final TextOverflow overflow;
+  final Color? color;
+  final bool centered;
+  final int? maxLines;
+  final double? fontSize;
+  final FontStyle? fontStyle;
+  final FontWeight? fontWeight;
+  final double? height;
+
+  ///
+  /// fontSize `24`
+  /// fontWeight `500`
+  const AppText.h4(
+    this.text, {
+    super.key,
+    this.multiText = true,
+    this.overflow = TextOverflow.ellipsis,
+    this.color,
+    this.maxLines,
+    this.height,
+    this.centered = false,
+    this.textAlign,
+    this.fontSize,
+    this.fontStyle,
+    this.fontWeight,
+  }) : style = AppTextStyle.h4;
+
+  ///
+  /// fontSize `16`
+  /// fontWeight `500`
+  const AppText.h5(
+    this.text, {
+    super.key,
+    this.multiText = true,
+    this.overflow = TextOverflow.ellipsis,
+    this.color,
+    this.maxLines,
+    this.height,
+    this.centered = false,
+    this.textAlign,
+    this.fontSize,
+    this.fontStyle,
+    this.fontWeight,
+  }) : style = AppTextStyle.h5;
+
+  ///
+  /// fontSize `12`
+  /// fontWeight `500`
+  const AppText.h6(
+    this.text, {
+    super.key,
+    this.multiText = true,
+    this.overflow = TextOverflow.ellipsis,
+    this.color,
+    this.maxLines,
+    this.height,
+    this.centered = false,
+    this.textAlign,
+    this.fontSize,
+    this.fontStyle,
+    this.fontWeight,
+  }) : style = AppTextStyle.h6;
+
+  ///
+  /// fontSize `16`
+  /// fontWeight `400`
+  const AppText.body(
+    this.text, {
+    super.key,
+    this.multiText = true,
+    this.overflow = TextOverflow.ellipsis,
+    this.color,
+    this.maxLines,
+    this.height,
+    this.centered = false,
+    this.textAlign,
+    this.fontSize,
+    this.fontStyle,
+    this.fontWeight,
+  }) : style = AppTextStyle.body;
+
+  ///
+  /// fontSize `12`
+  /// fontWeight `400`
+  const AppText.body2(
+    this.text, {
+    super.key,
+    this.multiText = true,
+    this.overflow = TextOverflow.ellipsis,
+    this.color,
+    this.maxLines,
+    this.height,
+    this.centered = false,
+    this.textAlign,
+    this.fontSize,
+    this.fontStyle,
+    this.fontWeight,
+  }) : style = AppTextStyle.body2;
+
+  ///
+  /// fontSize `14`
+  /// fontWeight `500`
+  const AppText.button(
+    this.text, {
+    super.key,
+    this.multiText = true,
+    this.overflow = TextOverflow.ellipsis,
+    this.color,
+    this.maxLines,
+    this.height,
+    this.centered = false,
+    this.textAlign,
+    this.fontSize,
+    this.fontStyle,
+    this.fontWeight,
+  }) : style = AppTextStyle.button;
+
+  ///
+  /// fontSize `[fontSize]`
+  /// fontWeight `[fontWeight]`
+  const AppText.custom(
+    this.text, {
+    super.key,
+    this.multiText = true,
+    this.overflow = TextOverflow.ellipsis,
+    this.color,
+    this.maxLines,
+    this.height,
+    this.centered = false,
+    this.textAlign,
+    this.fontSize,
+    this.fontStyle,
+    this.fontWeight,
+  }) : style = const TextStyle();
+
+  ///
+  /// fontSize `10`
+  /// fontWeight `400`
+  const AppText.caption(
+    this.text, {
+    super.key,
+    this.multiText = true,
+    this.overflow = TextOverflow.ellipsis,
+    this.color,
+    this.maxLines,
+    this.height,
+    this.centered = false,
+    this.textAlign,
+    this.fontSize,
+    this.fontStyle,
+    this.fontWeight,
+  }) : style = AppTextStyle.caption;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      maxLines: multiText || maxLines != null ? maxLines ?? 9999999999 : 1,
+      overflow: overflow,
+      textAlign: centered ? TextAlign.center : textAlign ?? TextAlign.left,
+      style: style.copyWith(
+        color: color,
+        height: height,
+        fontStyle: fontStyle,
+        fontWeight: fontWeight,
+      ),
+    );
+  }
+}
