@@ -1,5 +1,4 @@
 import 'package:dwellings_utils/dwellings_utils.dart';
-import 'package:dwellings_utils/src/gap.dart';
 import 'package:flutter/material.dart';
 
 class DwellingsTextField extends StatefulWidget {
