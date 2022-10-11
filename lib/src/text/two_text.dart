@@ -32,7 +32,7 @@ class TwoText extends StatelessWidget {
           TextSpan(
             recognizer: TapGestureRecognizer()..onTap = onSecondTap,
             text: secondText,
-            style: firstTextStyle ??
+            style: secondTextStyle ??
                 AppTextStyle.h6.copyWith(color: Theme.of(context).primaryColor),
           )
         ],
