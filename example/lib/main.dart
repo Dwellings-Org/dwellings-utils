@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:dwellings_utils/dwellings_utils.dart';
 import 'package:flutter/material.dart';
 
@@ -67,6 +69,17 @@ class _MyHomePageState extends State<MyHomePage> {
       body: ListView(
         padding: const EdgeInsets.all(20.0),
         children: <Widget>[
+          const SizedBox(height: 20),
+          TwoText(
+            firstText: "Didn’t receive code? ",
+            secondText: "Resend",
+            onFirstTap: () {
+              log("hello");
+            },
+            onSecondTap: () {
+              log("hello");
+            },
+          ),
           const SizedBox(height: 20),
           const SizedBox(
               height: 100,
