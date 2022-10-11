@@ -167,6 +167,8 @@ AppText.custom(
 )
 ```
 
+`TwoText`
+
 > TwoText [this is the rich text for the app]
 
 | parameter             | required             |      default      | type                                       |
