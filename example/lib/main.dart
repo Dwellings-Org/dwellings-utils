@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:dwellings_utils/dwellings_utils.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
   runApp(const MyApp());
@@ -81,13 +82,16 @@ class _MyHomePageState extends State<MyHomePage> {
             },
           ),
           const SizedBox(height: 20),
-          const SizedBox(
-              height: 100,
-              child: DwellingsTextField(
-                maxLines: 999,
-              )),
+          const DwellingsTextField.title(
+            title: "Password",
+            maxLines: null,
+            constraints: BoxConstraints(maxHeight: 100),
+          ),
           const SizedBox(height: 20),
-          const DwellingsTextField(maxLength: 80),
+          const DwellingsTextField(
+            maxLength: 80,
+            maxLines: null,
+          ),
           const SizedBox(height: 20),
           Row(
             children: [
