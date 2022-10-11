@@ -40,7 +40,7 @@ start using the package.
 
 AppColor holds all this values as static variable.
 
-> use case
+use case
 
 ```dart
 
@@ -77,7 +77,7 @@ Gap.s10
 Gap.s12;
 ```
 
->use case
+use case
 
 ```dart
 Column(
@@ -111,7 +111,7 @@ this are all the avaialable options
 | caption | 10 | w400
 | custom | user defined | user defined
 
-> Parameters available for this widget
+Parameters available for this widget
 
 | parameter             | required             |      default      | type                                       |
 | ----------------- | -----------------|----------------------------|--------------------- |
@@ -131,7 +131,7 @@ this are all the avaialable options
 
 it is important to note that ```style``` is on avaialable for custom.
 
-> Example
+Example
 
   `AppTextStyle`
 
