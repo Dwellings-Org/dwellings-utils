@@ -39,6 +39,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
+    - family: dwellings_icons
+      fonts:
+        - asset: packages/dwellings_utils/assets/fonts/AppIcons.ttf
     - family: Euclid_Circular_A
       fonts:
         - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid Circular A Light.ttf
@@ -51,9 +54,6 @@ flutter:
           weight: 500
         - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid_Circular_A_Bold.ttf
           weight: 600
-    - family: dwellings_icons
-      fonts:
-        - asset: packages/dwellings_utils/assets/fonts/AppIcons.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

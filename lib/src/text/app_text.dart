@@ -1,4 +1,4 @@
-import 'package:dwellings_utils/src/text.dart/textstyle.dart';
+import 'package:dwellings_utils/src/text/textstyle.dart';
 import 'package:flutter/material.dart';
 
 class AppText extends StatelessWidget {

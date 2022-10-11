@@ -1,4 +1,4 @@
-import 'package:dwellings_utils/src/text.dart/app_text.dart';
+import 'package:dwellings_utils/src/text/app_text.dart';
 import 'package:dwellings_utils/src/utils/color.dart';
 import 'package:flutter/material.dart';
 
