@@ -26,12 +26,20 @@ across both dwellings app.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+add this to your pubspec.yaml
+
+```yaml
+
+dwellings_utils:
+    git:
+      url: https://github.com/Dwellings-Org/dwellings-utils
+
+```
 
 ## Color Reference
 
-> Available colors
+Available App colors
+
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Primary | ![#1A73E8](https://via.placeholder.com/10/1A73E8?text=+) #1A73E8 |
