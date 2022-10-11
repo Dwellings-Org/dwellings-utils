@@ -91,7 +91,9 @@ class _DwellingsTextFieldState extends State<DwellingsTextField> {
                   ? InkWell(
                       onTap: _changePasswordVisibility,
                       child: Icon(
-                        obscureText ? Icons.visibility : Icons.visibility_off,
+                        obscureText
+                            ? Icons.visibility_outlined
+                            : Icons.visibility_off_outlined,
                       ),
                     )
                   : null,
