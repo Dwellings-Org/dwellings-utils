@@ -44,13 +44,13 @@ flutter:
         - asset: packages/dwellings_utils/assets/fonts/AppIcons.ttf
     - family: Euclid_Circular_A
       fonts:
-        - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid Circular A Light.ttf
+        - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid_Circular_A_Light.ttf
           weight: 100
-        - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid Circular A Medium.ttff
+        - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid_Circular_A_Medium.ttf
           weight: 300
-        - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid Circular A Regular.ttf
+        - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid_Circular_A_Regular.ttf
           weight: 400
-        - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid Circular A SemiBold.ttf
+        - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid_Circular_A_SemiBold.ttf
           weight: 500
         - asset: packages/dwellings_utils/assets/fonts/Euclid_Circular_A/Euclid_Circular_A_Bold.ttf
           weight: 600
