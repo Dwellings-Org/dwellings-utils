@@ -121,16 +121,16 @@ class _DwellingsTextFieldState extends State<DwellingsTextField> {
                   color: AppColor.primary.shade400,
                 ),
               ),
-              errorBorder: OutlineInputBorder(
+              errorBorder: const OutlineInputBorder(
                 borderSide: BorderSide(
                   width: .9,
-                  color: AppColor.red.shade400,
+                  color: AppColor.red,
                 ),
               ),
-              focusedErrorBorder: OutlineInputBorder(
+              focusedErrorBorder: const OutlineInputBorder(
                 borderSide: BorderSide(
                   width: 0.9,
-                  color: AppColor.red.shade400,
+                  color: AppColor.red,
                 ),
               ),
             ),
