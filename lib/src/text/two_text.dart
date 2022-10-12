@@ -21,8 +21,8 @@ class TwoText extends StatelessWidget {
   final VoidCallback? onSecondTap;
   @override
   Widget build(BuildContext context) {
-    return RichText(
-      text: TextSpan(
+    return Text.rich(
+      TextSpan(
         recognizer: TapGestureRecognizer()..onTap = onFirstTap,
         text: firstText,
         style: firstTextStyle ??
@@ -34,7 +34,9 @@ class TwoText extends StatelessWidget {
             text: secondText,
             style: secondTextStyle ??
                 AppTextStyle.h6.copyWith(color: Theme.of(context).primaryColor),
-          )
+          ),
+          //use to stop every space after text from being clickable
+          const TextSpan(text: " ")
         ],
       ),
     );
