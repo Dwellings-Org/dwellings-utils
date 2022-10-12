@@ -10,6 +10,20 @@ class Validator {
     return null;
   }
 
+  static String? email(String? email) {
+    final emailReg = RegExp(
+        r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
+    if (email != null) {
+      if (email.isEmpty) {
+        return "Email number cannot be empty";
+      } else if (!emailReg.hasMatch(email)) {
+        return "Invalid email address";
+      }
+      return null;
+    }
+    return "Invalid email address";
+  }
+
   static String? phone(String? phone) {
     if (phone != null) {
       if (phone.isEmpty) {
@@ -32,5 +46,14 @@ class Validator {
       return null;
     }
     return "Invalid $title";
+  }
+}
+
+class Format {
+  static String removePhoneLeadingZero(String phone) {
+    if (phone[0] == '0') {
+      phone = phone.substring(1);
+    }
+    return phone;
   }
 }
