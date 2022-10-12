@@ -109,7 +109,7 @@ class _DwellingsTextFieldState extends State<DwellingsTextField> {
               // colo
               enabledBorder: OutlineInputBorder(
                 borderSide: BorderSide(
-                  width: 1,
+                  width: 0.5,
                   color: widget.backgroundColor != null
                       ? Colors.transparent
                       : AppColor.grey.shade100,
@@ -123,13 +123,13 @@ class _DwellingsTextFieldState extends State<DwellingsTextField> {
               ),
               errorBorder: OutlineInputBorder(
                 borderSide: BorderSide(
-                  width: 0.2,
+                  width: .9,
                   color: AppColor.red.shade400,
                 ),
               ),
               focusedErrorBorder: OutlineInputBorder(
                 borderSide: BorderSide(
-                  width: 0.2,
+                  width: 0.9,
                   color: AppColor.red.shade400,
                 ),
               ),
