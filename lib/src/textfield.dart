@@ -127,6 +127,12 @@ class _DwellingsTextFieldState extends State<DwellingsTextField> {
                   color: AppColor.red.shade400,
                 ),
               ),
+              focusedErrorBorder: OutlineInputBorder(
+                borderSide: BorderSide(
+                  width: 0.2,
+                  color: AppColor.red.shade400,
+                ),
+              ),
             ),
           ),
         ),
