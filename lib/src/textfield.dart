@@ -14,6 +14,8 @@ class DwellingsTextField extends StatefulWidget {
     this.hintText,
     this.hintStyle,
     this.constraints,
+    this.controller,
+    this.validator,
   })  : title = null,
         titleStyle = null;
 
@@ -31,8 +33,12 @@ class DwellingsTextField extends StatefulWidget {
     this.title,
     this.titleStyle,
     this.constraints,
+    this.controller,
+    this.validator,
   });
 
+  final TextEditingController? controller;
+  final String? Function(String?)? validator;
   final bool isPassword;
   final Color? backgroundColor;
   final int? maxLines;
@@ -76,6 +82,8 @@ class _DwellingsTextFieldState extends State<DwellingsTextField> {
         Container(
           constraints: widget.constraints,
           child: TextFormField(
+            controller: widget.controller,
+            validator: widget.validator,
             maxLength: widget.maxLength,
             maxLines: widget.maxLines,
             focusNode: widget.focusNode,
