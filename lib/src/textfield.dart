@@ -123,13 +123,13 @@ class _DwellingsTextFieldState extends State<DwellingsTextField> {
               ),
               errorBorder: const OutlineInputBorder(
                 borderSide: BorderSide(
-                  width: .9,
+                  width: 1,
                   color: AppColor.red,
                 ),
               ),
               focusedErrorBorder: const OutlineInputBorder(
                 borderSide: BorderSide(
-                  width: 0.9,
+                  width: 1,
                   color: AppColor.red,
                 ),
               ),
