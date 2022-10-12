@@ -10,3 +10,4 @@ export 'src/text/two_text.dart';
 export 'src/gap.dart';
 export 'src/textfield.dart';
 export 'src/utils/validators.dart';
+export 'src/loader_page.dart';
