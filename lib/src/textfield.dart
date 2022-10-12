@@ -1,5 +1,6 @@
 import 'package:dwellings_utils/dwellings_utils.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class DwellingsTextField extends StatefulWidget {
   const DwellingsTextField({
@@ -17,6 +18,8 @@ class DwellingsTextField extends StatefulWidget {
     this.controller,
     this.validator,
     this.keyboardType,
+    this.inputFormatters,
+    this.textCapitalization = TextCapitalization.none,
   })  : title = null,
         titleStyle = null;
 
@@ -37,6 +40,8 @@ class DwellingsTextField extends StatefulWidget {
     this.controller,
     this.validator,
     this.keyboardType,
+    this.inputFormatters,
+    this.textCapitalization = TextCapitalization.none,
   });
 
   final TextInputType? keyboardType;
@@ -54,6 +59,8 @@ class DwellingsTextField extends StatefulWidget {
   final String? title;
   final TextStyle? titleStyle;
   final BoxConstraints? constraints;
+  final List<TextInputFormatter>? inputFormatters;
+  final TextCapitalization textCapitalization;
 
   @override
   State<DwellingsTextField> createState() => _DwellingsTextFieldState();
@@ -90,6 +97,8 @@ class _DwellingsTextFieldState extends State<DwellingsTextField> {
             validator: widget.validator,
             maxLength: widget.maxLength,
             maxLines: widget.maxLines,
+            textCapitalization: widget.textCapitalization,
+            inputFormatters: widget.inputFormatters,
             focusNode: widget.focusNode,
             obscureText: widget.isPassword ? obscureText : false,
             decoration: InputDecoration(
