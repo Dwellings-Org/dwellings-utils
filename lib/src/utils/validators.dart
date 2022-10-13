@@ -36,6 +36,17 @@ class Validator {
     return "Invalid phone number";
   }
 
+  static String? code(String? otp) {
+    if (otp != null) {
+      return otp.trim().isEmpty
+          ? "Code cannot be empty"
+          : otp.trim().length < 6
+              ? "Code is not complete"
+              : null;
+    }
+    return "Invalid code";
+  }
+
   static String? singleName(String? name, [String title = "Name"]) {
     if (name != null) {
       if (name.isEmpty) {
