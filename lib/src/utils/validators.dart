@@ -1,3 +1,6 @@
+import 'package:dwellings_utils/src/utils/formatters.dart';
+import 'package:intl/intl.dart';
+
 class Validator {
   static String? password(String? password) {
     if (password != null) {
@@ -61,11 +64,27 @@ class Validator {
 }
 
 //formating
-class Format {
+class TextFieldFormatter {
   static String removePhoneLeadingZero(String phone) {
     if (phone[0] == '0') {
       phone = phone.substring(1);
     }
     return phone;
+  }
+
+  static ThousandsFormatter thousandsFormatter(
+      {String moneySymbol = "₦",
+      NumberFormat? formatter,
+      bool allowFraction = false}) {
+    return ThousandsFormatter(
+      moneySymbol: moneySymbol,
+      formatter: formatter,
+      allowFraction: allowFraction,
+    );
+  }
+
+  static CreditCardFormatter creditCardFormatter(
+      {NumberFormat? formatter, bool allowFraction = false}) {
+    return CreditCardFormatter();
   }
 }
