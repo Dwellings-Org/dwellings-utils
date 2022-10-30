@@ -13,6 +13,7 @@ class DwellingsTextField extends StatefulWidget {
     this.prefixIcon,
     this.contentPadding,
     this.hintText,
+    this.onChanged,
     this.hintStyle,
     this.constraints,
     this.controller,
@@ -34,6 +35,7 @@ class DwellingsTextField extends StatefulWidget {
     this.contentPadding,
     this.hintText,
     this.hintStyle,
+    this.onChanged,
     this.title,
     this.titleStyle,
     this.constraints,
@@ -44,6 +46,7 @@ class DwellingsTextField extends StatefulWidget {
     this.textCapitalization = TextCapitalization.none,
   });
 
+  final Function(String)? onChanged;
   final TextInputType? keyboardType;
   final TextEditingController? controller;
   final String? Function(String?)? validator;
@@ -94,6 +97,7 @@ class _DwellingsTextFieldState extends State<DwellingsTextField> {
           child: TextFormField(
             controller: widget.controller,
             keyboardType: widget.keyboardType,
+            onChanged: widget.onChanged,
             validator: widget.validator,
             maxLength: widget.maxLength,
             maxLines: widget.maxLines,
