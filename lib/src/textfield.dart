@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 class DwellingsTextField extends StatefulWidget {
   const DwellingsTextField({
     super.key,
+    this.enabled = true,
     this.isPassword = false,
     this.backgroundColor,
     this.maxLines = 1,
@@ -26,6 +27,7 @@ class DwellingsTextField extends StatefulWidget {
 
   const DwellingsTextField.title({
     super.key,
+    this.enabled = true,
     this.isPassword = false,
     this.backgroundColor,
     this.maxLines = 1,
@@ -55,6 +57,7 @@ class DwellingsTextField extends StatefulWidget {
   final int? maxLines;
   final FocusNode? focusNode;
   final int? maxLength;
+  final bool enabled;
   final Widget? prefixIcon;
   final String? hintText;
   final TextStyle? hintStyle;
@@ -95,6 +98,7 @@ class _DwellingsTextFieldState extends State<DwellingsTextField> {
         Container(
           constraints: widget.constraints,
           child: TextFormField(
+            enabled: widget.enabled,
             controller: widget.controller,
             keyboardType: widget.keyboardType,
             onChanged: widget.onChanged,
