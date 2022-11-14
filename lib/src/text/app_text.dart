@@ -177,6 +177,7 @@ class AppText extends StatelessWidget {
       textAlign: centered ? TextAlign.center : textAlign ?? TextAlign.left,
       style: style.copyWith(
         color: color,
+        fontSize: fontSize,
         decoration: decoration,
         height: height,
         fontStyle: fontStyle,
