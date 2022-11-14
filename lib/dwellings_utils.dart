@@ -12,3 +12,4 @@ export 'src/skeleton.dart';
 export 'src/textfield.dart';
 export 'src/utils/validators.dart';
 export 'src/loader_page.dart';
+export 'src/debouncer.dart';
